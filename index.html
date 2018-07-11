@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Historia animacji</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/black.css">
@@ -26,11 +26,55 @@
 			<div class="slides">
 				<section>Slide 1</section>
 				<section>Slide 2</section>
+				<section data-markdown>
+					<textarea data-template>
+						## Page title
+
+						- Czy to będzie działać
+						- a czy to?
+				
+						A paragraph with some text and a [link](http://hakim.se).
+					</textarea>
+				</section>
+				<section>
+					<h1>Tytuł</h1>
+					<div class="fragment fade-in box" id="box">
+						<p>asdasd</p>
+					</div>
+					<pre>
+						<code data-trim data-neoscape>
+								var box = document.querySelector('#box');
+
+								box.addEventListener('click', function(){
+									this.style.backgroundColor = 'blue';
+									this.style.width = '500px';
+								})
+
+						</code>
+					</pre>
+				</section>
+				<section>
+					<h1>Tytuł strony</h1>
+					<span class="fragment fade-in">
+							<span class="fragment fade-out">I'll fade in, then out</span>
+						</span>
+					<div class="polowa">
+						<p>asdasdakdjalkdasdlksadad</p>
+						<p>vjskjshdfkshdfksdfhksdf</p>
+					</div>
+				</section>
+				<section>
+						<h2>This video will use up the remaining space on the slide</h2>
+						<div class="fragment fade-in">
+							<video data-autoplay class="stretch" src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"></video>
+						</div>
+					</section>
 			</div>
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
+		<script src="js/custom.js"></script>
 
 		<script>
 			// More info about config & dependencies:

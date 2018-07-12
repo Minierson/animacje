@@ -1403,7 +1403,7 @@ body {
 /********************************************
 * CUSTOM STYLES
 *********************************************/
-.reveal .slides h4 {
+.reveal .slides h3 {
   color: #E25121; }
 
 .reveal .slides .green {
@@ -1430,7 +1430,33 @@ body {
     -ms-flex: 1;
         flex: 1; }
 
+.reveal .slides .boxContainer {
+  width: 100%;
+  position: relative;
+  height: 200px; }
+
 .reveal .slides .box {
-  width: 50px;
-  height: 50px;
-  background: red; }
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; }
+
+.reveal .slides .box1 {
+  background: red;
+  transition: all 1s; }
+
+.reveal .slides .box2 {
+  background: blue; }
+
+.reveal .slides .box3 {
+  background: #E25121;
+  animation: animate 1s infinite alternate linear; }
+
+@keyframes animate {
+  from {
+    left: 0px; }
+  to {
+    left: 500px; } }

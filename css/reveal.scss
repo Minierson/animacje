@@ -1720,20 +1720,42 @@ $controlsArrowAngleActive: 36deg;
 /********************************************
 * CUSTOM STYLES
 *********************************************/
+.reveal{
+	.slides{
+		h4{
+			color: #E25121;
+		}
 
-.box{
-	width: 150px;
-	height: 150px;
-	background-color: red;
-	margin: 0 auto;
-	transition: all 0.3s;
+		.green{
+			color:green;
+		}
+		.grey{
+			color: #ccc;
+		}
 
-	&:hover{
-		width: 500px;
+		.mainTitle{
+			color: #E25121;
+		}
+
+		.halfView{
+			display: flex;
+			justify-content: space-between;
+			flex-flow: row wrap;
+			width: 100%;
+
+			.firstHalf{
+				flex: 1;
+			} 
+			.seccondHalf{
+				flex: 1;
+			}
+
+		}
+		.box{
+			width: 50px;
+			height: 50px;
+			background: red;
+		}
+
 	}
-}
-.polowa{
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-between
 }

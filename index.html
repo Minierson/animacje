@@ -22,6 +22,7 @@
 		document.getElementsByTagName('head')[0].appendChild(link);
 	</script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
 </head>
 
 <body>
@@ -80,6 +81,7 @@
 				</section>
 				<section>
 					<img src="./img/gif/construction.gif" alt="">
+					<img src="./img/gif/hiE5vMs.gif" alt="">
 				</section>
 				<section>
 					<h4 class="green">Wczesne lata</h4>
@@ -95,6 +97,9 @@
 							<img class="fragment fade-in" src="./img/tumblr_mjq9v0oj5s1rlkewbo1_128013.png" alt="">
 						</div>
 					</div>
+				</section>
+				<section>
+					<iframe class="stretch" src="https://gifcities.org/" frameborder="0"></iframe>
 				</section>
 			</section>
 			<section>
@@ -136,6 +141,13 @@
 				<section>
 					<h4>Amazon 1999</h4>
 					<img class="stretch" src="./img/oldWebsites_Amazon.png" alt="">
+				</section>
+				<section>
+					<p>przydatne linki</p>
+					<ul>
+						<li>https://archive.org/web/</li>
+						<li>http://oldweb.today/</li>
+					</ul>
 				</section>
 			</section>
 			<section>
@@ -198,24 +210,24 @@
 					</pre>
 				</section>
 				<section>
-						<h4>jQuery</h4>
-						<div class="boxContainer">
-							<div class="box box2" id="box2"></div>
-						</div>
-						<pre>
+					<h4>jQuery</h4>
+					<div class="boxContainer">
+						<div class="box box2" id="box2"></div>
+					</div>
+					<pre>
 							<code data-trim data-neoscape>
 								$('#box2').mouseover(function(){
 									$(this).animate({left: '500px'}, 1000)
 								})
 							</code>
 						</pre>
-					</section>
-					<section>
-							<h4>CSS keyframes</h4>
-							<div class="boxContainer">
-								<div class="box box3"></div>
-							</div>
-							<pre>
+				</section>
+				<section>
+					<h4>CSS keyframes</h4>
+					<div class="boxContainer">
+						<div class="box box3"></div>
+					</div>
+					<pre>
 								<code data-trim data-neoscape>
 										.box3{
 											background: #E25121;
@@ -227,23 +239,134 @@
 										}
 								</code>
 							</pre>
-						</section>
+				</section>
+				<section>
+					<div class="wrapper">
+						<div class="cube">
+							<div class="front"></div>
+							<div class="back"></div>
+							<div class="left"></div>
+							<div class="right"></div>
+							<div class="top"></div>
+							<div class="bottom"></div>
+						</div>
+					</div>
+				</section>
+				<section>
+					<pre>
+								<code data-trim data-neoscape>
+										.wrapper{
+											width: 400px;
+											height: 400px;
+											position: relative;
+											perspective: 600px;
+								
+											.cube{
+											width: 100%;
+											height: 100%;
+											transform-style: preserve-3d;
+											perspective-origin: 50% 50%;
+											backface-visibility: visible;
+											transition: transform 3s ease-in;
+								
+											&:hover{
+												transform: rotateY(360deg) rotateZ(360deg);
+											}
+											div{
+												top: 25px;
+											left: 25px;
+											width: 200px;
+											height: 200px;
+											position: absolute;
+											display: block;
+											text-align: center;
+											line-height: 100px;
+											font-size: 50px;
+											}
+											.front{
+											transform: translateZ(100px);
+											background-color: rgba(12, 124, 124, 0.5);
+										  }
+										  .back{
+											transform: rotateY(180deg) translateZ(100px);
+											background-color: rgba(124, 224, 24, 0.5);
+										  }
+										  .left{
+											transform: rotateY(-90deg) translateZ(100px);
+											background-color: rgba(196, 43, 36, 0.5);
+										  }
+										  .right{
+											transform: rotateY(90deg) translateZ(100px);
+											background-color: rgba(35, 36, 196, 0.5);
+										  }
+										  .top{
+											transform: rotateX(90deg) translateZ(100px);
+											background-color: rgba(255, 223, 15, 0.5);
+										  }
+										  .bottom{
+											transform: rotateX(-90deg) translateZ(100px);
+											background-color: rgba(255, 223, 15, 0.5);
+										  }
+										}
+									}
+								</code>
+							</pre>
+				</section>
 			</section>
 			<section>
-				<h1>Tytuł strony</h1>
-				<span class="fragment fade-in">
-					<span class="fragment fade-out">I'll fade in, then out</span>
-				</span>
-				<div class="polowa">
-					<p>asdasdakdjalkdasdlksadad</p>
-					<p>vjskjshdfkshdfksdfhksdf</p>
-				</div>
+				<h3>Era urządzeń mobilnych</h3>
+				<ul>
+					<li class="fragment fade-up">2010 – Ethan Marcotte wprowadza termin Responsive web design</li>
+					<li class="fragment fade-up">Flat design, więcej SVG</li>
+					<li class="fragment fade-up">Greensock, Bodymovin/lottie</li>
+					<li class="fragment fade-up">Web Animation API</li>
+				</ul>
 			</section>
 			<section>
-				<h2>This video will use up the remaining space on the slide</h2>
-				<div class="fragment fade-in">
-					<video width="80%" height="80%" data-autoplay class="" src="./img/vid/megaCarVideo.mp4"></video>
-				</div>
+				<section>
+					<h3>SVG</h3>
+					<svg height="210" width="500">
+						<polygon points="100,10 40,198 190,78 10,78 160,198" style="fill:lime;stroke:purple;stroke-width:5;fill-rule:nonzero;" />
+					</svg>
+					<pre>
+								<code data-trim data-neoscape>
+										<svg height="210" width="500">
+											<polygon points="100,10 40,198 190,78 10,78 160,198"
+											style="fill:lime;stroke:purple;stroke-width:5;fill-rule:nonzero;"/>
+										</svg>
+								</code>
+							</pre>
+
+				</section>
+				<section>
+					<h3>GreenSock</h3>
+					<img width="300px" src="./img/greensock-gsap-logo.png" alt="">
+					<div class="boxContainer">
+						<svg height="210" width="500" class="svg" id="svg">
+							<polygon points="100,10 40,198 190,78 10,78 160,198" style="fill:lime;stroke:purple;stroke-width:5;fill-rule:nonzero;" />
+					</svg>
+					</div>
+					<pre>
+						<code data-trim data-neoscape>
+								$('#svg').on('click', function(){
+									TweenMax.to($(this), 2, {x:600, rotation:360, ease:Linear.easeNone})
+								})
+						</code>
+					</pre>
+
+
+
+				</section>
+			</section>
+			<section>
+				<h3>Przyszłość?</h3>
+				<ul>
+					<li class="fragment fade-up">Augumented reality</li>
+					<li class="fragment fade-up">Animacje holograficzne - HoloLens</li>
+				</ul>
+			</section>
+			<section>
+				<h3>Dziękuję :)</h3>
 			</section>
 
 		</div>

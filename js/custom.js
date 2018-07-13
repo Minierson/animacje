@@ -11,3 +11,7 @@ box.addEventListener('mouseover', function(){
 $('#box2').mouseover(function(){
     $(this).animate({left: '500px'}, 1000)
 })
+
+$('#svg').on('click', function(){
+    TweenMax.to($(this), 2, {x:600, rotation:360, ease:Linear.easeNone})
+})
